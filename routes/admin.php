@@ -1,28 +1,22 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\ChallengesController;
+use App\Http\Controllers\Admin\NewsController;
+use App\Http\Controllers\Admin\SubmissionsController;
+use App\Http\Controllers\Admin\UserController;
 
 Route::prefix('admin')->group(function(){
 
-    Route::get('dashboard',function(){
-        return view('admin.dashboard.index');
-    })->name('dashboard');
-    
-    Route::get('challenges',function(){
-        return view('admin.challenges.index');
-    })->name('challenges');
+    Route::get('dashboard',[DashboardController::class,'index'])->name('dashboard');
 
-    Route::get('news',function(){
-        return view('admin.news.index');
-    })->name('news');
+    Route::get('challenges',[ChallengesController::class,'index'])->name('challenges');
 
-    Route::get('submissions',function(){
-        return view('admin.submissions.index');
-    })->name('submissions');
+    Route::get('news',[NewsController::class,'index'])->name('news');
 
-    Route::get('users',function(){
-        return view('admin.users.index');
-    })->name('users');
+    Route::get('submissions',[SubmissionsController::class,'index'])->name('submissions');
 
+    Route::get('users',[UserController::class,'index'])->name('users');
 
 });

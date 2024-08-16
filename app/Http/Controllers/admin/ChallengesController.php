@@ -13,6 +13,7 @@ class ChallengesController extends Controller
     public function index()
     {
         //
+        return view('admin.challenges.index');
     }
 
     /**

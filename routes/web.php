@@ -48,6 +48,9 @@ Route::post('/updateProfile',[RegisterAndLoginController::class,'updateProfile']
 Route::post('/uploadPhoto', [RegisterAndLoginController::class, 'uploadPhoto']);
 
 //Routes for admin
+Route::get('/dashboard',function(){
+    return view('admin.dashboard.index');
+});
 Route::get('/admindashboard', [AdminController::class, 'admindashboard']);
 Route::get('/adminchallenges',[AdminController::class,'adminchallenges']);
 Route::get('/adminchallenges/multiplechoice',[AdminController::class,'adminMultipleChoice']);

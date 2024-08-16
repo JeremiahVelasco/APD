@@ -1,0 +1,1 @@
+<h1 class=" text-[1.3rem] font-medium tracking-wide">{{$title}}</h1>

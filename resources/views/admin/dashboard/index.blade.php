@@ -1,4 +1,4 @@
 @extends('layouts.admin-layout')
 @section('content')
-    <h1>Hello World</h1>
+    <x-admin-header title="Dashboard"/>
 @endsection

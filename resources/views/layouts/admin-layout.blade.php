@@ -8,7 +8,7 @@
     <title>APD Admin</title>
     @vite('resources/css/app.css')
 </head>
-<body class="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-white text-black">
+<body class="min-h-screen flex flex-col flex-auto flex-shrink-0 antialiased bg-gray-950 text-white">
     <x-admin-navbar/>
     <x-admin-sidebar/>
     <div class="h-full ml-14 mt-14 mb-10 md:ml-64 p-4 flex flex-col">

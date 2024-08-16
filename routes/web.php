@@ -83,3 +83,5 @@ Route::post('/delete-admin',[AdminController::class,'deleteAdmin']);
 Route::post('/delete-user',[AdminController::class,'deleteUser']);
 Route::get('display', [AdminController::class, 'display']);
 Route::post('/post', [AdminController::class, 'post']);
+
+require __DIR__.'/admin.php';
